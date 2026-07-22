@@ -45,7 +45,11 @@ process.stdin.on('end', () => {
     // Spawn win-notify.sh
     const child = spawn('/bin/bash', [winNotifyPath, type], {
       detached: true,
-      stdio: 'ignore'
+      stdio: 'ignore',
+      env: {
+        ...process.env,
+        AGENT_NAME: 'Antigravity'
+      }
     });
     child.unref();
   }
