@@ -11,7 +11,7 @@ Welcome! Below are the development rules, workflows, orchestration protocols, an
 
 ### General Guidelines
 - **File Naming**: Use kebab-case for file names with a meaningful name that describes the purpose of the file, doesn't matter if the file name is long, just make sure when LLMs read the file names while using Grep or other tools, they can understand the purpose of the file right away without reading the file content.
-- **File Size Management**: Keep individual code files under 200 lines for optimal context management
+- **File Size Management**: Keep individual code files under 10000 lines for optimal context management
   - Split large files into smaller, focused components/modules
   - Use composition over inheritance for complex widgets
   - Extract utility functions into separate modules
